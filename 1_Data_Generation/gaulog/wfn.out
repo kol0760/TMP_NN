@@ -1,0 +1,332 @@
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.8(dev), update date: 2024-Jul-1
+ Developer: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Below paper ***MUST BE CITED IN MAIN TEXT*** if Multiwfn is used in your work:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+
+ ( Number of parallel threads:   4  Current date: 2024-10-17  Time: 10:32:24 )
+ OpenMP stacksize for each thread:    1000.00 MB
+ 
+ Please wait...
+ 
+ Total energy:    -712.888626534941 Hartree,   Virial ratio:  2.00964653
+ Total/Alpha/Beta electrons:    124.0000     62.0000     62.0000
+ Net charge:     0.00000    Expected multiplicity:    1
+ The number of orbitals:    62,  Atoms:     36,  GTFs:    552
+ This is a restricted closed-shell single-determinant wavefunction
+ Title line of this file:  Title Card Required
+
+ Loaded N.wfn successfully!
+ 
+ Formula: H19 C15 N1 O1      Total atoms:      36
+ Molecule weight:       229.31802 Da
+ Point group: C1 
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+
+ !!! NOTE: If this module is used in your research, please NOT ONLY cite original paper of Multiwfn (J. Comput. Chem., 33, 580-592 (2012)), BUT ALSO cite the following book chapter, which comprehensively introduces feature and implementation of this module:
+ Tian Lu, Qinxue Chen. Realization of Conceptual Density Functional Theory and Information-Theoretic Approach in Multiwfn Program. In Conceptual Density Functional Theory, WILEY-VCH GmbH: Weinheim (2022); pp 631-647 DOI: 10.1002/9783527829941.ch31
+ 
+ ---- Calculate various quantities in conceptual density functional theory ----
+ -3 Set degree of FMO degeneracy for options 1, 2 and 3, current: Nondegenerate
+ -2 Choose the quantum chemistry program used in option 1, current: Gaussian
+ -1 Toggle calculating electrophilicity index (w_cubic) and electrophilic descri
+ ptor (epsilon) by option 2, current: No
+ 0 Return
+ 1 Generate .wfn files for N, N+1, N-1 electrons states
+ 2 Calculate various quantitative indices
+ 3 Calculate grid data of Fukui function, dual descriptor and related functions
+ 4 Set delta in orbital-weighted (OW) calculation, current: 0.1000 a.u.
+ 5 Print current orbital weights used in orbital-weighted (OW) calculation
+ 6 Calculate condensed OW Fukui function and OW dual descriptor
+ 7 Calculate grid data of OW Fukui function and OW dual descriptor
+ 8 Calculate nucleophilic and electrophilic superdelocalizabilities
+ 9 Calculate grid data of Fukui potential and dual descriptor potential
+ N.wfn has been found in current folder
+ N+1.wfn has been found in current folder
+ N-1.wfn has been found in current folder
+
+ Radial grids:   75    Angular grids:  434   Total:     32550
+ Calculating Hirshfeld charges for N electrons state...
+ Progress: [#-------------------------------------------------]     2.8 %     - Progress: [##------------------------------------------------]     5.6 %     \ Progress: [####----------------------------------------------]     8.3 %     | Progress: [#####---------------------------------------------]    11.1 %     / Progress: [######--------------------------------------------]    13.9 %     - Progress: [########------------------------------------------]    16.7 %     \ Progress: [#########-----------------------------------------]    19.4 %     | Progress: [###########---------------------------------------]    22.2 %     / Progress: [############--------------------------------------]    25.0 %     - Progress: [#############-------------------------------------]    27.8 %     \ Progress: [###############-----------------------------------]    30.6 %     | Progress: [################----------------------------------]    33.3 %     / Progress: [##################--------------------------------]    36.1 %     - Progress: [###################-------------------------------]    38.9 %     \ Progress: [####################------------------------------]    41.7 %     | Progress: [######################----------------------------]    44.4 %     / Progress: [#######################---------------------------]    47.2 %     - Progress: [#########################-------------------------]    50.0 %     \ Progress: [##########################------------------------]    52.8 %     | Progress: [###########################-----------------------]    55.6 %     / Progress: [#############################---------------------]    58.3 %     - Progress: [##############################--------------------]    61.1 %     \ Progress: [###############################-------------------]    63.9 %     | Progress: [#################################-----------------]    66.7 %     / Progress: [##################################----------------]    69.4 %     - Progress: [####################################--------------]    72.2 %     \ Progress: [#####################################-------------]    75.0 %     | Progress: [######################################------------]    77.8 %     / Progress: [########################################----------]    80.6 %     - Progress: [#########################################---------]    83.3 %     \ Progress: [###########################################-------]    86.1 %     | Progress: [############################################------]    88.9 %     / Progress: [#############################################-----]    91.7 %     - Progress: [###############################################---]    94.4 %     \ Progress: [################################################--]    97.2 %     | Progress: [##################################################]   100.0 %     / 
+ Calculating Hirshfeld charges for N+1 electrons state...
+ Progress: [#-------------------------------------------------]     2.8 %     - Progress: [##------------------------------------------------]     5.6 %     \ Progress: [####----------------------------------------------]     8.3 %     | Progress: [#####---------------------------------------------]    11.1 %     / Progress: [######--------------------------------------------]    13.9 %     - Progress: [########------------------------------------------]    16.7 %     \ Progress: [#########-----------------------------------------]    19.4 %     | Progress: [###########---------------------------------------]    22.2 %     / Progress: [############--------------------------------------]    25.0 %     - Progress: [#############-------------------------------------]    27.8 %     \ Progress: [###############-----------------------------------]    30.6 %     | Progress: [################----------------------------------]    33.3 %     / Progress: [##################--------------------------------]    36.1 %     - Progress: [###################-------------------------------]    38.9 %     \ Progress: [####################------------------------------]    41.7 %     | Progress: [######################----------------------------]    44.4 %     / Progress: [#######################---------------------------]    47.2 %     - Progress: [#########################-------------------------]    50.0 %     \ Progress: [##########################------------------------]    52.8 %     | Progress: [###########################-----------------------]    55.6 %     / Progress: [#############################---------------------]    58.3 %     - Progress: [##############################--------------------]    61.1 %     \ Progress: [###############################-------------------]    63.9 %     | Progress: [#################################-----------------]    66.7 %     / Progress: [##################################----------------]    69.4 %     - Progress: [####################################--------------]    72.2 %     \ Progress: [#####################################-------------]    75.0 %     | Progress: [######################################------------]    77.8 %     / Progress: [########################################----------]    80.6 %     - Progress: [#########################################---------]    83.3 %     \ Progress: [###########################################-------]    86.1 %     | Progress: [############################################------]    88.9 %     / Progress: [#############################################-----]    91.7 %     - Progress: [###############################################---]    94.4 %     \ Progress: [################################################--]    97.2 %     | Progress: [##################################################]   100.0 %     / 
+ Calculating Hirshfeld charges for N-1 electrons state...
+ Progress: [#-------------------------------------------------]     2.8 %     - Progress: [##------------------------------------------------]     5.6 %     \ Progress: [####----------------------------------------------]     8.3 %     | Progress: [#####---------------------------------------------]    11.1 %     / Progress: [######--------------------------------------------]    13.9 %     - Progress: [########------------------------------------------]    16.7 %     \ Progress: [#########-----------------------------------------]    19.4 %     | Progress: [###########---------------------------------------]    22.2 %     / Progress: [############--------------------------------------]    25.0 %     - Progress: [#############-------------------------------------]    27.8 %     \ Progress: [###############-----------------------------------]    30.6 %     | Progress: [################----------------------------------]    33.3 %     / Progress: [##################--------------------------------]    36.1 %     - Progress: [###################-------------------------------]    38.9 %     \ Progress: [####################------------------------------]    41.7 %     | Progress: [######################----------------------------]    44.4 %     / Progress: [#######################---------------------------]    47.2 %     - Progress: [#########################-------------------------]    50.0 %     \ Progress: [##########################------------------------]    52.8 %     | Progress: [###########################-----------------------]    55.6 %     / Progress: [#############################---------------------]    58.3 %     - Progress: [##############################--------------------]    61.1 %     \ Progress: [###############################-------------------]    63.9 %     | Progress: [#################################-----------------]    66.7 %     / Progress: [##################################----------------]    69.4 %     - Progress: [####################################--------------]    72.2 %     \ Progress: [#####################################-------------]    75.0 %     | Progress: [######################################------------]    77.8 %     / Progress: [########################################----------]    80.6 %     - Progress: [#########################################---------]    83.3 %     \ Progress: [###########################################-------]    86.1 %     | Progress: [############################################------]    88.9 %     / Progress: [#############################################-----]    91.7 %     - Progress: [###############################################---]    94.4 %     \ Progress: [################################################--]    97.2 %     | Progress: [##################################################]   100.0 %     / 
+ 
+ Reloading the file initially loaded after booting up Multiwfn...
+ 
+ Done! Data have been outputted to CDFT.txt in current folder!
+ 
+ ---- Calculate various quantities in conceptual density functional theory ----
+ -3 Set degree of FMO degeneracy for options 1, 2 and 3, current: Nondegenerate
+ -2 Choose the quantum chemistry program used in option 1, current: Gaussian
+ -1 Toggle calculating electrophilicity index (w_cubic) and electrophilic descri
+ ptor (epsilon) by option 2, current: No
+ 0 Return
+ 1 Generate .wfn files for N, N+1, N-1 electrons states
+ 2 Calculate various quantitative indices
+ 3 Calculate grid data of Fukui function, dual descriptor and related functions
+ 4 Set delta in orbital-weighted (OW) calculation, current: 0.1000 a.u.
+ 5 Print current orbital weights used in orbital-weighted (OW) calculation
+ 6 Calculate condensed OW Fukui function and OW dual descriptor
+ 7 Calculate grid data of OW Fukui function and OW dual descriptor
+ 8 Calculate nucleophilic and electrophilic superdelocalizabilities
+ 9 Calculate grid data of Fukui potential and dual descriptor potential
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.8(dev), update date: 2024-Jul-1
+ Developer: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Below paper ***MUST BE CITED IN MAIN TEXT*** if Multiwfn is used in your work:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+
+ ( Number of parallel threads:   4  Current date: 2024-10-17  Time: 10:32:42 )
+ OpenMP stacksize for each thread:    1000.00 MB
+ 
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is D
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:    124.0000     62.0000     62.0000
+ Net charge:     0.00000      Expected multiplicity:    1
+ Atoms:     36,  Basis functions:    293,  GTFs:    552
+ Total energy:    -712.888626534943 Hartree,   Virial ratio:  2.00964653
+ This is a restricted single-determinant wavefunction
+ Orbitals from 1 to    62 are occupied
+ Title line of this file: Title Card Required
+
+ Loaded test.fchk successfully!
+ 
+ Formula: H19 C15 N1 O1      Total atoms:      36
+ Molecule weight:       229.31802 Da
+ Point group: C1 
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ 
+            ================ Bond order analysis ===============
+ -1 Define fragment 1 and 2 for options 1,3,4,7,8,10 (to be defined)
+ 0 Return
+ 1 Mayer bond order analysis
+ 2 Multicenter bond order analysis
+ -2 Multicenter bond order analysis in NAO basis
+ 3 Wiberg bond order analysis in Lowdin orthogonalized basis
+ 4 Mulliken bond order (Mulliken overlap population) analysis
+ 5 Decompose Mulliken bond order between two atoms to orbital contributions
+ 6 Orbital occupancy-perturbed Mayer bond order
+ 7 Fuzzy bond order analysis (FBO)
+ 8 Laplacian bond order (LBO)
+ 9 Decompose Wiberg bond order in NAO basis as atomic orbital pair contribution
+ 10 Intrinsic bond strength index (IBSI)
+ 11 AV1245 index (approximate multicenter bond order for large rings) and AVmin
+ Calculating, please wait...
+ Bond orders with absolute value >=  0.050000
+ #    1:         1(C )    2(C )    2.09499187
+ #    2:         1(C )    3(C )   -0.05553009
+ #    3:         1(C )    4(C )    0.09317355
+ #    4:         1(C )    7(N )    1.00063391
+ #    5:         2(C )    3(C )    1.17827553
+ #    6:         3(C )    4(C )    1.61534930
+ #    7:         3(C )    6(C )    0.10027104
+ #    8:         3(C )    8(H )    0.90988120
+ #    9:         4(C )    5(C )    1.17737919
+ #   10:         4(C )    9(H )    0.91349309
+ #   11:         5(C )    6(C )    2.35250020
+ #   12:         6(C )   10(C )    1.04968758
+ #   13:         7(N )   11(C )    0.92897452
+ #   14:         7(N )   12(C )    0.94561715
+ #   15:        10(C )   13(C )    0.99243003
+ #   16:        10(C )   14(H )    0.91899294
+ #   17:        10(C )   15(C )    0.99205568
+ #   18:        11(C )   16(C )    0.98106890
+ #   19:        11(C )   17(H )    0.92469427
+ #   20:        11(C )   18(H )    0.92193902
+ #   21:        12(C )   19(C )    0.98520993
+ #   22:        12(C )   20(C )    0.99145473
+ #   23:        12(C )   21(H )    0.91415440
+ #   24:        13(C )   22(H )    0.94464980
+ #   25:        13(C )   23(H )    0.94258106
+ #   26:        13(C )   24(H )    0.93766530
+ #   27:        15(C )   25(H )    0.94872071
+ #   28:        15(C )   26(H )    0.94309992
+ #   29:        15(C )   27(H )    0.94752225
+ #   30:        16(C )   28(O )    0.91667827
+ #   31:        16(C )   29(C )    0.98804293
+ #   32:        16(C )   30(H )    0.93186691
+ #   33:        19(C )   28(O )    0.90904140
+ #   34:        19(C )   31(H )    0.92752525
+ #   35:        19(C )   32(H )    0.92352719
+ #   36:        20(C )   29(C )    0.97357212
+ #   37:        20(C )   33(H )    0.93399072
+ #   38:        20(C )   34(H )    0.92942606
+ #   39:        29(C )   35(H )    0.93325653
+ #   40:        29(C )   36(H )    0.93812519
+ 
+ Total valences and free valences defined by Mayer:
+ Atom     1(C ) :    3.17779583    0.00000000
+ Atom     2(C ) :    3.44909908    0.00000000
+ Atom     3(C ) :    3.79549949    0.00000000
+ Atom     4(C ) :    3.83550080    0.00000000
+ Atom     5(C ) :    3.66026527    0.00000000
+ Atom     6(C ) :    3.49869941    0.00000000
+ Atom     7(N ) :    2.90586194    0.00000000
+ Atom     8(H ) :    0.93325215    0.00000000
+ Atom     9(H ) :    0.93527309    0.00000000
+ Atom    10(C ) :    3.92722435    0.00000000
+ Atom    11(C ) :    3.77570660    0.00000000
+ Atom    12(C ) :    3.89231865    0.00000000
+ Atom    13(C ) :    3.82873402    0.00000000
+ Atom    14(H ) :    0.91857279    0.00000000
+ Atom    15(C ) :    3.83075461    0.00000000
+ Atom    16(C ) :    3.87156247    0.00000000
+ Atom    17(H ) :    0.92424577    0.00000000
+ Atom    18(H ) :    0.93430399    0.00000000
+ Atom    19(C ) :    3.75728509    0.00000000
+ Atom    20(C ) :    3.81336369    0.00000000
+ Atom    21(H ) :    0.93959953    0.00000000
+ Atom    22(H ) :    0.93435528    0.00000000
+ Atom    23(H ) :    0.93422783    0.00000000
+ Atom    24(H ) :    0.93681551    0.00000000
+ Atom    25(H ) :    0.93412832    0.00000000
+ Atom    26(H ) :    0.93494691    0.00000000
+ Atom    27(H ) :    0.93675232    0.00000000
+ Atom    28(O ) :    1.88783160    0.00000000
+ Atom    29(C ) :    3.81594072    0.00000000
+ Atom    30(H ) :    0.93374536    0.00000000
+ Atom    31(H ) :    0.92917701    0.00000000
+ Atom    32(H ) :    0.92758074    0.00000000
+ Atom    33(H ) :    0.93299072    0.00000000
+ Atom    34(H ) :    0.93418212    0.00000000
+ Atom    35(H ) :    0.93183647    0.00000000
+ Atom    36(H ) :    0.93288455    0.00000000
+ 
+ If outputting bond order matrix to bndmat.txt in current folder? (y/n)
+ Result have been outputted to bndmat.txt in current folder
+ 
+ 
+            ================ Bond order analysis ===============
+ -1 Define fragment 1 and 2 for options 1,3,4,7,8,10 (to be defined)
+ 0 Return
+ 1 Mayer bond order analysis
+ 2 Multicenter bond order analysis
+ -2 Multicenter bond order analysis in NAO basis
+ 3 Wiberg bond order analysis in Lowdin orthogonalized basis
+ 4 Mulliken bond order (Mulliken overlap population) analysis
+ 5 Decompose Mulliken bond order between two atoms to orbital contributions
+ 6 Orbital occupancy-perturbed Mayer bond order
+ 7 Fuzzy bond order analysis (FBO)
+ 8 Laplacian bond order (LBO)
+ 9 Decompose Wiberg bond order in NAO basis as atomic orbital pair contribution
+ 10 Intrinsic bond strength index (IBSI)
+ 11 AV1245 index (approximate multicenter bond order for large rings) and AVmin
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
