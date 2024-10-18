@@ -10,5 +10,5 @@ input_file="$1"
 mkdir spms 
 cd spms
 cp ../$input_file .
-python ../spms.py $input_file
+python ../../script/spms.py $input_file
 cd ..

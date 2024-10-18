@@ -85,6 +85,6 @@ formchk $chk_file
 echo -e "22\n2\n0\nq" | $Multiwfn N.wfn >wfn.out
 echo -e "9\n1\ny\n0\nq" | $Multiwfn ${chk_file/.chk/.fchk} >> wfn.out
 
-python ../gaulog.py
+python ../../script/gaulog.py
 
 cd ..

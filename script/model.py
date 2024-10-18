@@ -4,8 +4,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.optim import lr_scheduler
-
-
 class CrossAttention(nn.Module):
     def __init__(self, query_dim, key_dim, value_dim, hidden_dim):
         super(CrossAttention, self).__init__()
@@ -125,5 +123,4 @@ class MultimodalMoleculeNet(nn.Module):
         # x = torch.cat((x3d, x2d, x_rnn,x3d_2d,x1d_2d), dim=1)
 
         x = self.layers(x)
-        
         return x
