@@ -8,6 +8,11 @@ import pandas as pd
 from pyscf.tools import cubegen
 import sys
 import dftd3.pyscf as d3
+import warnings
+
+
+warnings.filterwarnings("ignore", 
+                        message="Since PySCF-2.3, B3LYP (and B3P86) are changed to the VWN-RPA variant")
 
 
 unit_convert = 0.529177  # 1 Bohr = 0.529117 A

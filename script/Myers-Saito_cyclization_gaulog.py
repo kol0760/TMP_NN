@@ -277,7 +277,6 @@ class MolecularGraphProcessor:
                 if 6 in i: Side_chain1 = i
                 if 7 in i: Side_chain2 = i
                 if 2 in i: Frame_Part = i
-            return False
         return list(Side_chain1), list(Side_chain2), list(Frame_Part), ring_type
 
     def calculate_volume(self, elements, coordinates, Side_chain):
@@ -354,7 +353,7 @@ class MolecularGraphProcessor:
             EF[k] = np.append(bond_features, bond_order[i, j])
 
         # Create tensors for model input
-        y_val = get_energy(self.xyz_path,-1)
+        y_val = float(get_energy(self.xyz_path,-1))
         # y_val = 0.0  # Placeholder value for target variable
         global_features_tensor = torch.tensor(global_features, dtype=torch.float)
         X_tensor = torch.tensor(X, dtype=torch.float)
